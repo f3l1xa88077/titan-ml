@@ -10,15 +10,15 @@ This project implements a deep learning pipeline to upscale low-resolution image
 - **Training Strategy:** Adversarial training with multiple loss functions to balance sharpness, realism, and accuracy.
 
 ## 📁 Project Structure
+Although this structure is not provided in the repository (because of file-size limitations), it can easily be rebuilt using the [low-res](https://photojournal.jpl.nasa.gov/catalog/PIA22770) and [high-res](https://astrogeology.usgs.gov/search/map/titan_cassini_sar_hisar_global_mosaic_351m) images.
+The test/ folder simply needs an image pair with the same name in their respective folders.
 ```
 model
 ├── references
 │   ├── highres.tif
 │   └── lowres.tif
 ├── save
-│   ├── generator_base.pth
-│   ├── generator_base_variant1.pth
-│   └── generator_base_variant2.pth
+│   └── generator_base.pth
 ├── test
 │   ├── highres
 │   ├── lowres
